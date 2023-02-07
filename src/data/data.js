@@ -7,6 +7,7 @@ export const fetchData=createAsyncThunk('fetchData',async()=>{
         method: 'GET',
         headers: { 'X-Api-Key': 'd4SNbRec1unteqNzzEJOIuc8sV0Zb0aKqn14U77J'},
         contentType: 'application/json',
+        
     });
     return JSON.stringify(response);
 })

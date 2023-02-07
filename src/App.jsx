@@ -12,7 +12,7 @@ function App() {
   },[])
   return (
     <div className="App bg-page w-full h-screen flex flex-col items-center justify-center">
-      <BoxQuote dispa={dispatch}/>
+      <BoxQuote dispa={dispatch} initState={state}/>
     </div>
   )
 }
