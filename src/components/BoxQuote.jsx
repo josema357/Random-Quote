@@ -8,16 +8,16 @@ const BoxQuote = (props) => {
   return (
     <>
     <div id='quote-box' className='bg-white text-page font-medium w-[90%] max-w-[550px] flex flex-col justify-center content-center px-[10px] py-[20px] min-[500px]:px-[40px] min-[500px]:py-[20px] gap-[15px] rounded-md'>
-        <div className='quote-text text-center'>
+        <div id='quote-prub' className='quote-text text-center'>
             <span id='text' className='text-center inline-block min-[500px]:text-2xl break-words'>
                 <i className='mr-[5px]'><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" className="bi bi-quote fill-page inline-block min-[500px]:w-[35px] min-[500px]:h-[35px]" viewBox="0 0 16 16">
                     <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
                 </svg></i>
-                <span>{!(props.initState.quote.isLoading) && props.initState.quote.data.quote}</span>
+                <span>{props.initState.quote.data!=null ? props.initState.quote.data.quote : null}</span>
             </span>
         </div>
         <div className='quote-author flex justify-end'>
-            <span id='author' className=' capitalize font-normal min-[500px]:text-lg truncate'>{!(props.initState.quote.isLoading) && `- ${props.initState.quote.data.author}`}</span>
+            <span id='author' className=' capitalize font-normal min-[500px]:text-lg truncate'>{props.initState.quote.data!=null ? `- ${props.initState.quote.data.author}` : null}</span>
         </div>
         <div className='buttons flex justify-between mt-[10px] max-[300px]:flex-col gap-[10px]'>
             <div className='flex w-[90px] justify-between max-[300px]:justify-center max-[300px]:w-full gap-[10px]'>
