@@ -7,3 +7,6 @@
         --color-page: 22 160 133;
     }
 }
+#quote-prub, #author{
+    transition: opacity 0.8s;
+}

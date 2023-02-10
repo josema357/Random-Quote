@@ -6,7 +6,7 @@ import { fetchData } from "./data/data";
 function App() {
   const dispatch=useDispatch();
   const state=useSelector(state=>state);
-  console.log("State",state.quote.isLoading)
+  console.log("State",state.quote)
   useEffect(()=>{
     dispatch(fetchData())
   },[])
