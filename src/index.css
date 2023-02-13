@@ -7,6 +7,11 @@
         --color-page: 22 160 133;
     }
 }
-#quote-prub, #author{
-    transition: opacity 0.8s;
+.App,
+#quote-prub, 
+#author, 
+.quotation, 
+#new-quote,
+.red-quote{
+    transition: all 0.8s ease-out;
 }
