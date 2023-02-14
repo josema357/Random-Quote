@@ -15,3 +15,28 @@
 .red-quote{
     transition: all 0.8s ease-out;
 }
+
+#quote-prub::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#quote-prub::-webkit-scrollbar:vertical {
+    width:5px;
+}
+
+#quote-prub::-webkit-scrollbar-button:increment,#quote-prub::-webkit-scrollbar-button {
+    display: none;
+} 
+
+#quote-prub::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#quote-prub::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: none
+}
+
+#quote-prub::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
