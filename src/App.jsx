@@ -6,6 +6,7 @@ import { fetchData } from "./data/data";
 function App() {
   const dispatch=useDispatch();
   const state=useSelector(state=>state);
+  console.log(import.meta.env.VITE_REACT_QUOTE_DATA_URL)
   useEffect(()=>{
     dispatch(fetchData())
   },[])

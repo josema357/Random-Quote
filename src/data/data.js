@@ -3,9 +3,9 @@ import axios from "axios";
 
 //Action
 export const fetchData=createAsyncThunk('fetchData',async()=>{
-    const response= await axios.get('https://api.api-ninjas.com/v1/quotes?category=love',{
+    const response= await axios.get(import.meta.env.VITE_REACT_QUOTE_DATA_URL,{
         method: 'GET',
-        headers: { 'X-Api-Key': 'd4SNbRec1unteqNzzEJOIuc8sV0Zb0aKqn14U77J'},
+        headers: { 'X-Api-Key': import.meta.env.VITE_REACT_API_KEY},
         contentType: 'application/json',
         
     });
